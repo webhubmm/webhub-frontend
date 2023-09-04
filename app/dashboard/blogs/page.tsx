@@ -2,7 +2,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <h1 className='text-xl'>This is categories pages</h1>
+    <div>this is blogs page</div>
   )
 }
 
