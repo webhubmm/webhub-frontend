@@ -1,5 +1,5 @@
-export const api = 'https://jsonplaceholder.typicode.com'
+export const api = 'http://localhost:3001'
 
-export const blogs = {
-    list: api+'/posts'
+export const categories = {
+    list: api+'/categories'
 }

@@ -99,7 +99,7 @@ export default function AdminNavbar() {
 
  
   return (
-    <Navbar className="sticky top-0 z-10  mx-auto max-w-screen-xl border border-gray-500 border-collapse shadow-none rounded-none p-4">
+    <Navbar className="fixed top-0 z-10  mx-auto max-w-screen-xl border border-gray-500 border-collapse shadow-none rounded-none p-4">
       <div className="relative mx-auto flex items-center justify-between text-blue-gray-900">
         <IconButton
           size="sm"

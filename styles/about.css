@@ -1,0 +1,8 @@
+#about{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+    justify-content: center;
+}

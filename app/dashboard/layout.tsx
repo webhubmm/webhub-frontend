@@ -32,12 +32,12 @@ const Layout = ({
   return (
         <ThemeProvider> 
           <div className="flex relative">
-              <div className={`transition duration-500 w-2/3 sm:w-64 ${state.open ? '' : 'absolute top-0 left-[-100%]'}`}>
+              <div className={`transition duration-500 w-2/3 sm:w-64 ${state.open ? 'sticky' : 'absolute top-0 left-[-100%]'}`}>
                 <AdminSidebar />
               </div>
-              <div className='w-full flex-1'>
+              <div className='w-full flex-1 overflow-scroll'>
                 <AdminNavbar />
-                  <div className={ screenWidth > 768 ? 'p-4 md:p-12' : `p-4 md:p-12 ${state.open ? 'opacity-0' : 'opacity-1'}`}>
+                  <div className={ screenWidth > 768 ? 'p-4 md:p-12' : `p-4 md:p-12 ${state.open ? 'opacity-0' : 'opacity-1'}`} style={{ marginTop: '50px' }}>
                     {children}
                   </div>
               </div>

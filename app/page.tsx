@@ -1,11 +1,16 @@
+import About from '@/components/About/About'
+import Banner from '@/components/Banner/Banner'
+import Counter from '@/components/Counter/Counter'
+import Project from '@/components/Project/Project'
 import Image from 'next/image'
 
 export default function Home() {
   return (
     <>
-      <h1 className='text-2xl'>
-        This is <span className="">Home Page</span>
-      </h1> 
+      <Banner />
+      <About />
+      <Project />
+      <Counter />
     </>
   )
 }

@@ -1,9 +1,10 @@
-import '@/styles/globals.css'
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import { SidebarContextProvider } from '@/contexts/AdminSidebarContext';
 
-const inter = Inter({ subsets: ['latin'] })
+import '@/styles/globals.css'
+import '@/styles/style.css'
+import type { Metadata } from 'next'
+import { SidebarContextProvider } from '@/contexts/AdminSidebarContext';
+import Navbar from '@/components/navbar/Navbar';
+
 
 export const metadata: Metadata = {
   title: 'WEBHUB Myanmar',
@@ -19,7 +20,12 @@ export default function RootLayout({
     <SidebarContextProvider>
 
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        <Navbar />
+        <main>
+          {children}
+        </main>
+      </body>
     </html>
 
     </SidebarContextProvider>
