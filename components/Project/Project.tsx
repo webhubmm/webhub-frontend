@@ -10,7 +10,7 @@ const Project = () => {
     <section id='project' className='section-spacing'>
         <div className='container'>
             <div className="w-full text-center">
-                <h1 className="gradient-title">
+                <h1 className="gradient-title text-end">
                     Done Projects
                 </h1>
             </div>
@@ -45,8 +45,8 @@ const Project = () => {
                 </div>
             </div>
 
-            <div className="w-full text-center">
-                <a href="/" className="link text-3xl ">See More Projects</a>
+            <div className="w-full flex justify-end">
+                <a href="/" className="link">See More Projects</a>
             </div>
         </div>
     </section>
