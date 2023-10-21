@@ -15,10 +15,10 @@
     justify-content: space-between;
 }
 
-.counter-main-title{
-    font-size: 120px !important;
+#counter .counter-main-title{
+    font-size: 120px;
     margin:0 0 10px 0 !important;
-    background: linear-gradient(254deg,rgb(230, 5, 170) 5%, rgb(28, 135, 250) 55%, rgb(255, 58, 78) 65%);
+    background: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -34,7 +34,7 @@
 
 .count{
     font-size: 50px;
-    /* font-family: var(--euro-extd); */
+    font-family: var(--euro-extd);
     color: #fff;
 }
 

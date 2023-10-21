@@ -6,7 +6,7 @@ const Banner = () => {
   return (
     <>
         <section id='banner' className='section-spacing'>
-            <div className="container">
+            <div className="container text-center">
                 <h1 className="main-title">
                     Webhub
                 </h1>
