@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from 'react'
-import '../../styles/project.css'
+import '../../../styles/project.css'
 import Image from 'next/image'
 
 const Project = () => {

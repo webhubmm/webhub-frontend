@@ -27,7 +27,7 @@ const Navbar = () => {
 
 
   return (
-    <nav className={(scrollY > 100 || open) ? 'bg-primary' : ''}>
+    <nav className={(scrollY > 200 || open) ? 'nav-bg' : ''}>
         <div className='navbar container'>
             <div className="flex justify-between nav-brand items-center">
                 <a href="/">

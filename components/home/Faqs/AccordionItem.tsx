@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../styles/faq.css'
+import '../../../styles/faq.css'
 
 interface AccordionItemProps {
     data: {

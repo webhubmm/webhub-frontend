@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../styles/expertise.css'
+import '../../../styles/expertise.css'
 import ExpertiseCard from './ExpertiseCard'
 
 const Expertise = () => {
@@ -41,7 +41,7 @@ const Expertise = () => {
             <div className="expertise-box">
                 {
                     data.map((card,index) => (
-                        <ExpertiseCard 
+                        <ExpertiseCard
                             key={index}
                             title={card.title}
                             content={card.body}

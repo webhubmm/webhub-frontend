@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useState } from 'react'
-import '../../styles/faq.css'
-import AccordionItem from './AccordionItem'
+import '../../../styles/faq.css'
+import AccordionItem from './AccordionItem';
 
 const faqs = [
   {
@@ -55,7 +55,7 @@ const Faq = () => {
                 <div className="faq-box">
                     {
                       faqs.map((data,index) => (
-                        <AccordionItem 
+                        <AccordionItem
                           key={index} 
                           data={data} 
                           isActive={index === activeIndex} 

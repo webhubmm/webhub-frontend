@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../styles/expertise.css'
+import '../../../styles/expertise.css'
 
 interface ExpertiseCardProps {
     title: string,

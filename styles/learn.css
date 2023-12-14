@@ -1,0 +1,102 @@
+
+
+#learn .gradient-title{
+    font-size: 50px !important;
+    background: linear-gradient(to left top, #f7a311, #e5d600, #c3ff00, rgb(7, 184, 28), #12eb33);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.learn-layout{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .learn-layout{
+        grid-template-columns: 1fr;
+    }
+}
+
+.course-card{
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border: 20px;
+    padding: 0;
+    background: rgba(47, 50, 65, 0.50);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.6px);
+    -webkit-backdrop-filter: blur(7.6px);
+    border: 1px solid rgba(47, 50, 65, 0.50);
+    position: relative;
+}
+
+.course-card::before{
+    height: 55%;
+    width: 0%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: #ffffff2b;
+    transition: .5s;
+}
+
+.course-card:hover::before{
+    height: 55%;
+    width: 100%;
+}
+
+.course-card .content{
+    width: 100%;
+    padding: 20px;
+}
+
+.course-card .content h3{
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: var(--euro-extd);
+    color: var(--main-text-color);
+}
+
+.course-card .content h4{
+    font-size: 16px;
+    color: var(--sub-text-color);
+}
+
+.course-card img{
+    height: 55%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gradient-1{
+    border-radius: 50%;
+    background: var(--primary-color, radial-gradient(40.45% 40.45% at 50% 46.16%, rgba(1, 9, 80, 0.90) 3.13%, rgba(14, 17, 32, 0.00) 100%));
+    filter: blur(12px);
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    z-index: -1;
+}
+
+.gradient-2{
+    border-radius: 50%;
+    background: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    filter: blur(12px);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    z-index: -1;
+}

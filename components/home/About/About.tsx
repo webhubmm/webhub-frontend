@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../styles/about.css'
+import '../../../styles/about.css'
 
 const About = () => {
   return (
@@ -16,6 +16,7 @@ const About = () => {
                 Lorem ipsum dolor sit amet <a href="" className="link">Web Design</a> adipisicing elit. Corporis aperiam, vel <a href="" className="link">Mobile App</a> suscipit est perferendis ratione!
                 Lorem ipsum dolor sit amet <a href="" className="link">Maintainence</a> adipisicing elit. Corporis aperiam, vel <a href="" className="link">Content Management</a> suscipit est perferendis ratione!
             </p>
+
     </section>
   )
 }
