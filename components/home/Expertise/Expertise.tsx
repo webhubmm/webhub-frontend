@@ -1,6 +1,6 @@
 import React from 'react'
-import '../../../styles/expertise.css'
 import ExpertiseCard from './ExpertiseCard'
+import Reveal from '@/components/Utils/Reveal'
 
 const Expertise = () => {
 
@@ -34,10 +34,12 @@ const Expertise = () => {
 
   return (
     <section id='expertise' className='section-spacing'>
-        <div className="container">
-            <h2 className="gradient-title text-center">
-                    Our Expertise
-            </h2>
+        <div className="container mx-auto px-4">
+            <Reveal>
+                <h2 className="gradient-title text-center">
+                        Our Expertise
+                </h2>
+            </Reveal>
             <div className="expertise-box">
                 {
                     data.map((card,index) => (

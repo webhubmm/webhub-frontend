@@ -1,9 +1,11 @@
 "use client";
 
 import React from 'react'
-import '../../styles/navbar.css'
 import Image from 'next/image'
 import { BiMenu, BiX } from "react-icons/bi";
+import { motion } from 'framer-motion'
+import { MdLanguage } from "react-icons/md";
+import { CiDark } from "react-icons/ci";
 
 const Navbar = () => {
 
@@ -27,8 +29,12 @@ const Navbar = () => {
 
 
   return (
-    <nav className={(scrollY > 200 || open) ? 'nav-bg' : ''}>
-        <div className='navbar container'>
+    <motion.nav 
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        transition={{ type: 'spring', stiffness: 150 }}
+        className={(scrollY > 200 || open) ? 'nav-bg' : ''}>
+        <div className='navbar container mx-auto px-4'>
             <div className="flex justify-between nav-brand items-center">
                 <a href="/">
                     <Image 
@@ -41,38 +47,33 @@ const Navbar = () => {
                         }}
                         priority />
                 </a>
-                <div className='text-white toggle-btn text-5xl' onClick={() => {
+                {/* <div className='text-white toggle-btn text-5xl' onClick={() => {
                         setOpen(!open)
                 }}>
                     {
                         open ? <BiX /> : <BiMenu />
                     }
-                </div>
+                </div> */}
             </div>
-            <ul className={open ? 'nav-active' : ''}>
+            <ul className='flex items-center'>
                 <li>
-                    <a href="">
-                        About Us
+                    <a className='text-white'>
+                        Contact Us
                     </a>
                 </li>
                 <li>
-                    <a href="">
-                        Services
-                    </a>
+                    <button className='text-white text-3xl ms-3 mt-1'>
+                        <MdLanguage />
+                    </button>
                 </li>
                 <li>
-                    <a href="">
-                        Portfolio
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        FAQ's
-                    </a>
+                    <button className='text-white text-3xl ms-3 mt-1'>
+                        <CiDark />
+                    </button>
                 </li>
             </ul>
         </div>
-    </nav>
+    </motion.nav>
   )
 }
 

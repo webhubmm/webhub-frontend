@@ -1,19 +1,22 @@
+"use client";
+
+import Reveal from '@/components/Utils/Reveal';
 import React from 'react'
-import '../../../styles/banner.css'
-import { BiMailSend } from 'react-icons/bi'
 
 const Banner = () => {
   return (
     <>
         <section id='banner' className='section-spacing'>
-            <div className="container text-center">
-                <h1 className="main-title">
-                    Webhub
-                </h1>
-                <h2 className="subtitle">
-                    Boost your <span className='primary-text-color euro-extd'>productivity</span> with our services 
-                </h2>
-            </div>
+            <Reveal>
+                <div className="container mx-auto px-4 text-center">
+                            <h1 className="main-title">
+                                Webhub
+                            </h1>
+                            <h2 className="subtitle">
+                                Boost your <span className='primary-text-color euro-extd'>productivity</span> with our services 
+                            </h2>
+                </div>
+            </Reveal>
         </section>
     </>
   )

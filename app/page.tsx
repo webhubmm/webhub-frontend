@@ -5,7 +5,9 @@ import Expertise from '@/components/home/Expertise/Expertise'
 import Faq from '@/components/home/Faqs/Faq'
 import GetInTouch from '@/components/home/GetInTouch/GetInTouch'
 import Learn from '@/components/home/Learn/Learn'
+import Process from '@/components/home/Process/Process'
 import Project from '@/components/home/Project/Project'
+import Testimonial from '@/components/home/Testimonial/Testimonial'
 
 export default function Home() {
   return (
@@ -14,10 +16,12 @@ export default function Home() {
       <About />
       <Project />
       <Counter />
-      <Faq />
-      <Expertise />
-      <Learn />
       <GetInTouch />
+      <Expertise />
+      <Process />
+      <Testimonial />
+      <Faq />
+      <Learn />
     </>
   )
 }

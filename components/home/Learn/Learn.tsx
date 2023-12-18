@@ -1,8 +1,9 @@
 'use client'
 
 import React from 'react'
-import '../../../styles/learn.css'
 import CourseCard from './CourseCard';
+import Reveal from '@/components/Utils/Reveal';
+import {motion} from 'framer-motion'
 
 const Learn = () => {
 
@@ -16,7 +17,7 @@ const Learn = () => {
             total: 155,
             projects: [],
             color: "#00ff2f",
-            image: "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            image: "/images/web.jpeg",
         },
         {
             id: 2,
@@ -27,7 +28,7 @@ const Learn = () => {
             projects: [],
             total: 69,
             color: "#fffb00",
-            image: "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            image: "/images/js.jpeg",
         },
         {
             id: 3,
@@ -38,7 +39,7 @@ const Learn = () => {
             projects: [],
             total: 80,
             color: "#00c3ff",
-            image: "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            image: "/images/react.png",
         },
         {
             id: 4,
@@ -49,26 +50,40 @@ const Learn = () => {
             projects: [],
             total: 50,
             color: "#ff1e00",
-            image: "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            image: "/images/laravel9.webp",
         }
     ]
   return (
     <div className='w-full flex justify-center items-center'>
-        <section id='learn' className='container section-spacing relative'>
+        <section id='learn' className='container mx-auto px-4 section-spacing relative'>
             <div className="">
-                <h2 className="gradient-title text-center">
-                        Free Learning
-                </h2>
+                <Reveal>
+                    <h2 className="gradient-title text-center">
+                            Free Learning
+                    </h2>
+                </Reveal>
             </div>
-            <div className="gradient-1"></div>
-            <div className="gradient-2"></div>
-            <div className="learn-layout">
-                {
-                    data.map((course,index) => (
-                         <CourseCard key={index} course={course} />
-                    ))
-                }  
-            </div>
+            <motion.div className="gradient-1"
+            animate={{
+                x: [-20,0,-20],
+              }}
+              transition={{ duration: 3, repeat: Infinity }}
+            ></motion.div>
+            <motion.div className="gradient-2"
+            animate={{
+                y: [-20,0,-20],
+              }}
+              transition={{ duration: 3, repeat: Infinity }}
+            ></motion.div>
+            <Reveal width='100%'>
+                <div className="learn-layout">
+                    {
+                        data.map((course,index) => (
+                            <CourseCard key={index} course={course} />
+                        ))
+                    }  
+                </div>
+            </Reveal>
     </section>
     </div>
   )

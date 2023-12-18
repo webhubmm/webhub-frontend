@@ -1,52 +1,68 @@
-import React from 'react'
-import Marquee from 'react-fast-marquee';
-import '../../../styles/get-in-touch.css'
-import Link from 'next/link';
-const GetInTouch = () => {
-  return (
-    <>
-    <section id="get-in-touch">
-        <div className="container-fluid relative">
-            <Marquee 
-            speed={100}
-            autoFill={true}>
-                <span className='get-in-touch-title'>W</span>
-                <span className='get-in-touch-title'>E</span>
-                <span className='get-in-touch-title'>B</span>
-                <span className='get-in-touch-title'>H</span>
-                <span className='get-in-touch-title'>U</span>
-                <span className='get-in-touch-title'>B</span>
-                <span className='get-in-touch-title'>M</span>
-                <span className='get-in-touch-title'>Y</span>
-                <span className='get-in-touch-title'>A</span>
-                <span className='get-in-touch-title'>N</span>
-                <span className='get-in-touch-title'>M</span>
-                <span className='get-in-touch-title'>A</span>
-                <span className='get-in-touch-title'>R</span>
-            </Marquee>
-            <Marquee 
-            speed={100}
-            autoFill={true}
-            direction='right'>
-                <span className='get-in-touch-title'>W</span>
-                <span className='get-in-touch-title'>E</span>
-                <span className='get-in-touch-title'>B</span>
-                <span className='get-in-touch-title'>H</span>
-                <span className='get-in-touch-title'>U</span>
-                <span className='get-in-touch-title'>B</span>
-                <span className='get-in-touch-title'>M</span>
-                <span className='get-in-touch-title'>Y</span>
-                <span className='get-in-touch-title'>A</span>
-                <span className='get-in-touch-title'>N</span>
-                <span className='get-in-touch-title'>M</span>
-                <span className='get-in-touch-title'>A</span>
-                <span className='get-in-touch-title'>R</span>
-            </Marquee>
-            <Link href={'/'} className='primary-btn'>Get Start</Link>
-        </div>
-    </section>
-    </>
-  )
+"use client"
+
+import { useRef } from "react";
+import {
+  motion,
+  useScroll,
+  useSpring,
+  useTransform,
+  useMotionValue,
+  useVelocity,
+  useAnimationFrame
+} from "framer-motion";
+import { wrap } from "@motionone/utils";
+
+interface ParallaxProps {
+  children: string;
+  baseVelocity: number;
 }
 
-export default GetInTouch
+function ParallaxText({ children, baseVelocity = 100 }: ParallaxProps) {
+  const baseX = useMotionValue(0);
+  const { scrollY } = useScroll();
+  const scrollVelocity = useVelocity(scrollY);
+  const smoothVelocity = useSpring(scrollVelocity, {
+    damping: 50,
+    stiffness: 400
+  });
+  const velocityFactor = useTransform(smoothVelocity, [0, 1000], [0, 5], {
+    clamp: false
+  });
+
+  const x = useTransform(baseX, (v) => `${wrap(-20, -45, v)}%`);
+
+  const directionFactor = useRef<number>(1);
+  useAnimationFrame((t, delta) => {
+    let moveBy = directionFactor.current * baseVelocity * (delta / 5000);
+
+    if (velocityFactor.get() < 0) {
+      directionFactor.current = -1;
+    } else if (velocityFactor.get() > 0) {
+      directionFactor.current = 1;
+    }
+
+    moveBy += directionFactor.current * moveBy * velocityFactor.get();
+
+    baseX.set(baseX.get() + moveBy);
+  });
+
+  return (
+    <div className="parallax">
+      <motion.div className="scroller" style={{ x }}>
+        <span className='get-in-touch-title'>{children} </span>
+        <span className='get-in-touch-title'>{children} </span>
+        <span className='get-in-touch-title'>{children} </span>
+        <span className='get-in-touch-title'>{children} </span>
+      </motion.div>
+    </div>
+  );
+}
+
+export default function App() {
+  return (
+    <section>
+      <ParallaxText baseVelocity={-5}>WEBHUB MYANMAR</ParallaxText>
+      <ParallaxText baseVelocity={5}>WE GROW TOGETHER WITH YOU</ParallaxText>
+    </section>
+  );
+}

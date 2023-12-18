@@ -13,16 +13,21 @@ interface AccordionItemProps {
 const AccordionItem = ({data,isActive,onClick} : AccordionItemProps) => {
   return (
     <>
-        <div className={`faq-item ${isActive ? 'active' : ''}`} onClick={() => onClick(data.id)}>
-            <div className="faq-question">
-                {data.question}
+        <li onClick={() => onClick(data.id)} className={`${isActive ? 'active' : ''}`} style={{ zIndex: 0 }}>
+            <div className="process-number">
+                <h1>
+                    {"0" + data.id}
+                </h1>
             </div>
-            <div className="faq-answer">
-                <p className='lead-text'>
+            <div className="process-title">
+                <h2>{data.question}</h2>
+            </div>
+            <div className="process-content">
+                <p>
                     {data.answer}
                 </p>
             </div>
-        </div>
+        </li>
     </>
   )
 }

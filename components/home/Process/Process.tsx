@@ -4,35 +4,35 @@ import React, { useState } from 'react'
 import AccordionItem from './AccordionItem';
 import Reveal from '@/components/Utils/Reveal';
 
-const faqs = [
+const process = [
   {
     id: 1,
-    question: 'How can I help ?',
+    question: 'Design',
     answer: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga similique voluptate reiciendis quisquam perspiciatis veritatis corporis vero corrupti? Dolorem, veritatis!'
   },
   {
     id: 2,
-    question: 'How can I help ?',
+    question: 'Development',
     answer: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga similique voluptate reiciendis quisquam perspiciatis veritatis corporis vero corrupti? Dolorem, veritatis!'
   },
   {
     id: 3,
-    question: 'How can I help ?',
+    question: 'Testing',
     answer: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga similique voluptate reiciendis quisquam perspiciatis veritatis corporis vero corrupti? Dolorem, veritatis!'
   },
   {
     id: 4,
-    question: 'How can I help ?',
+    question: 'Production',
     answer: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga similique voluptate reiciendis quisquam perspiciatis veritatis corporis vero corrupti? Dolorem, veritatis!'
   },
   {
     id: 5,
-    question: 'How can I help ?',
+    question: 'Maintanence',
     answer: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga similique voluptate reiciendis quisquam perspiciatis veritatis corporis vero corrupti? Dolorem, veritatis!'
   },
 ]
 
-const Faq = () => {
+const Process = () => {
 
   const [activeIndex, setActiveIndex] = useState<any>(0);
 
@@ -45,31 +45,30 @@ const Faq = () => {
   };
 
   return (
-    <section id="faq">
-        <Reveal>
-          <div className="faq-container  container mx-auto px-4 justify-center">
-              <div className='relative'>
-                  <div className='gradient-title title'>
-                      Frequently Ask Questions
-                  </div>
+    <section id="process" className='container-fluid mx-auto'>
+            <div className="w-full">
+              <div className='flex justify-center items-center flex-col gap-20'>
+                  <Reveal>
+                    <div className='gradient-title title'>
+                        Our Process
+                    </div>
+                    <ul className='process-box'>
+                      {
+                        process.map((data,index) => (
+                          <AccordionItem
+                              key={index} 
+                              data={data} 
+                              isActive={index === activeIndex} 
+                              onClick={() => handleItemClick(index)}
+                          />
+                        ))
+                      }
+                    </ul>
+                  </Reveal>
               </div>
-              <div className="faq-box">
-                  {
-                    faqs.map((data,index) => (
-                      <AccordionItem
-                        key={index} 
-                        data={data} 
-                        isActive={index === activeIndex} 
-                        onClick={() => handleItemClick(index)}
-                      />
-                    ))
-                  }
-              </div>
-          </div>
-        </Reveal>
-
+            </div>
     </section>
   )
 }
 
-export default Faq
+export default Process
