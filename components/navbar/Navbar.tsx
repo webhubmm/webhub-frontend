@@ -61,16 +61,6 @@ const Navbar = () => {
                         Contact Us
                     </a>
                 </li>
-                <li>
-                    <button className='text-white text-3xl ms-3 mt-1'>
-                        <MdLanguage />
-                    </button>
-                </li>
-                <li>
-                    <button className='text-white text-3xl ms-3 mt-1'>
-                        <CiDark />
-                    </button>
-                </li>
             </ul>
         </div>
     </motion.nav>

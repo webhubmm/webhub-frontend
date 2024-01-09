@@ -159,7 +159,7 @@ body{
     font-weight: bolder;
     font-family: var(--euro-extd);
     background: rgb(28,161,250);
-    background: linear-gradient(254deg,rgb(230, 61, 5) 5%, rgb(250, 246, 28) 55%, rgb(230, 61, 5) 65%);
+    background: linear-gradient(to left top, #11f76e, #00e5da, #00c7ff, #097bcd, #8deb12);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 30px 0;
@@ -603,6 +603,7 @@ body{
 
 .faq-item{
     width: 100%;
+    transition: .5s;
 }
 
 .faq-question{
@@ -613,12 +614,8 @@ body{
     padding: 40px 20px;
     border: .5px solid var(--sub-text-color);
     position: relative;
+    transition: .5s;
 }
-
-.faq-answer{
-    display: none;
-}
-
 .faq-question:hover{
     color: var(--main-text-color);
 }
@@ -636,18 +633,19 @@ body{
 
 .faq-item.active{
     background-color: #fff;
+    transition: .5s;
 }
 
 .faq-item.active .faq-question {
     color: #000 !important;
     border: none;
+    transition: .5s;
 }
 
 .faq-item.active .faq-answer {
     color: #111;
     border: none;
     padding: 20px;
-    display: block;
 }
 
 .faq-item.active .faq-question::before{
@@ -1071,7 +1069,7 @@ body{
   /* testimonial */
 
   #testimonial .gradient-title{
-    background: linear-gradient(254deg,rgb(238, 85, 34) 5%,rgb(250, 202, 28) 55%, rgb(189, 5, 230) 65%);
+    background: linear-gradient(254deg,rgb(238, 85, 34) 5%,rgb(250, 202, 28) 55%, rgb(144, 230, 5) 65%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -1100,4 +1098,19 @@ body{
     .slick-prev, .slick-next{
         top: -10px !important;
         z-index: 3;
+    }
+
+
+
+    /* partner */
+
+    #partner .gradient-title{
+        font-size: 60px;
+        font-weight: bolder;
+        font-family: var(--euro-extd);
+        background: rgb(28,161,250);
+        background: linear-gradient(to left top, #f71169, #3900e5, #00c7ff, #097bcd, #ebd512);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: 30px 0;
     }

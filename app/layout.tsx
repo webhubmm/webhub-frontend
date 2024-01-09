@@ -6,6 +6,7 @@ import { SidebarContextProvider } from '@/contexts/AdminSidebarContext';
 import Navbar from '@/components/navbar/Navbar';
 import { useEffect, useState } from 'react';
 import {motion} from 'framer-motion'
+import Footer from '@/components/Footer/Footer';
 
 // export const metadata: Metadata = {
 //   title: 'WEBHUB Myanmar',
@@ -57,6 +58,7 @@ export default function RootLayout({
         <main>
           {children}
         </main>
+        <Footer />
       </body>
     </html>
 

@@ -1,5 +1,8 @@
+"use client"
+
 import Reveal from '@/components/Utils/Reveal'
 import React from 'react'
+import { motion } from 'framer-motion';
 
 interface ExpertiseCardProps {
     title: string,
@@ -11,14 +14,15 @@ const ExpertiseCard = ({title,number,content}: ExpertiseCardProps) => {
   return (
     <>
         <Reveal>
-            <div className="expertise-item">
+            <motion.div className="expertise-item"
+            >
                 <div className="title">
                     <span className='gradient-title'>{number}</span> {title}
                 </div>
                 <div className="content">
                     {content}
                 </div>
-            </div>
+            </motion.div>
         </Reveal>
     </>
   )

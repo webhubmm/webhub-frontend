@@ -1,3 +1,4 @@
+import { AnimatePresence, motion } from 'framer-motion';
 import React from 'react'
 
 interface AccordionItemProps {
@@ -13,16 +14,27 @@ interface AccordionItemProps {
 const AccordionItem = ({data,isActive,onClick} : AccordionItemProps) => {
   return (
     <>
-        <div className={`faq-item ${isActive ? 'active' : ''}`} onClick={() => onClick(data.id)}>
-            <div className="faq-question">
-                {data.question}
+        <AnimatePresence>
+            <div className={`faq-item ${isActive ? 'active' : ''}`} onClick={() => onClick(data.id)}>
+                <div className="faq-question">
+                    {data.question}
+                </div>
+                {
+                    isActive && 
+                    <motion.div className="faq-answer"
+                        initial={{ opacity: 0, scaleY: 0 }}
+                        animate={{ opacity: 1, scaleY: 1 }}
+                        exit={{ opacity: 0, scaleY: 0 }}
+                        transition={{ duration: .5 }}
+                    >
+                        <p className='lead-text'>
+                            {data.answer}
+                        </p>
+                    </motion.div>
+                }
             </div>
-            <div className="faq-answer">
-                <p className='lead-text'>
-                    {data.answer}
-                </p>
-            </div>
-        </div>
+        </AnimatePresence>
+
     </>
   )
 }
