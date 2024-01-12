@@ -23,12 +23,13 @@ const Counter = () => {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi fugit architecto labore officia, velit numquam. Lorem ipsum dolor sit amet.
                       </p>
                     </div>
-                    <Link href={'/'} className='primary-btn mx-auto lg:mx-0'>Our Team</Link>
+                    <div className="flex justify-center lg:justify-start">
+                      <Link href={'/'} className=' primary-btn'>Our Team</Link>
+                    </div>
                     </>
                   </Reveal>
-
               </div>
-              <div className='w-full grid grid-cols-2 items-center place-items-center' style={{ gap: '35px' }}>
+              <div className='w-full grid grid-cols-2 gap-3 items-center place-items-center' style={{ gap: '35px' }}>
                 <Reveal>
                   <div className='flex flex-col gap-0'>
                       <h1 className="count">

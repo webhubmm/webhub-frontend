@@ -8,9 +8,9 @@ const Project = () => {
     <section id='project' className='section-spacing'>
         <div className='container mx-auto px-4'>
             <Reveal>
-                <div className="w-full text-center">
-                    <h1 className="gradient-title text-end">
-                        Done Projects
+                <div className="flex justify-center md:justify-start">
+                    <h1 className="gradient-title">
+                        Projects
                     </h1>
                 </div>
             </Reveal>
@@ -50,10 +50,28 @@ const Project = () => {
             </Reveal>
 
             <Reveal>
+                <div className="project container mx-auto px-4 justify-center">
+                    <div className='relative'>
+                        <div className={`title subtitle`}>
+                            Thai Stock Lottery Engine
+                        </div>
+                    </div>
+                    <div className="img-container box-1">
+                        <Image
+                            src="/images/project-2.png"
+                            width={700}
+                            height={400}
+                            alt="Picture of the author"
+                        />
+                    </div>
+                </div>
+            </Reveal>
+
+            {/* <Reveal>
                 <div className="w-full flex justify-center md:justify-end">
                     <a href="/" className="link">See More Projects</a>
                 </div>
-            </Reveal>
+            </Reveal> */}
         </div>
     </section>
   )

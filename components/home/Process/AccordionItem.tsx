@@ -7,7 +7,7 @@ interface AccordionItemProps {
         answer: string
     },
     isActive: boolean,
-    onClick: () => React.ChangeEvent<HTMLInputElement>
+    onClick: (id: number) => void
 }
 
 const AccordionItem = ({data,isActive,onClick} : AccordionItemProps) => {

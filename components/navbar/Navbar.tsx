@@ -2,7 +2,7 @@
 
 import React from 'react'
 import Image from 'next/image'
-import { BiMenu, BiX } from "react-icons/bi";
+import { BiLogoFacebook, BiLogoLinkedin, BiLogoYoutube, BiMailSend, BiMenu, BiX } from "react-icons/bi";
 import { motion } from 'framer-motion'
 import { MdLanguage } from "react-icons/md";
 import { CiDark } from "react-icons/ci";
@@ -55,13 +55,27 @@ const Navbar = () => {
                     }
                 </div> */}
             </div>
-            <ul className='flex items-center'>
+            <div className="flex justify-start">
+                <a href="#!" className="mr-6 text-neutral-600 dark:text-neutral-200">
+                    <BiLogoFacebook style={{ color: "#fff", fontSize: "20px" }} />
+                </a>
+                <a href="#!" className="mr-6 text-neutral-600 dark:text-neutral-200">
+                    <BiMailSend style={{ color: "#fff", fontSize: "20px" }} />
+                </a>
+                <a href="#!" className="mr-6 text-neutral-600 dark:text-neutral-200">
+                    <BiLogoYoutube style={{ color: "#fff", fontSize: "20px" }} />
+                </a>
+                <a href="#!" className="mr-6 text-neutral-600 dark:text-neutral-200">
+                    <BiLogoLinkedin style={{ color: "#fff", fontSize: "20px" }} />
+                </a>
+            </div>
+            {/* <ul className='flex items-center'>
                 <li>
                     <a className='text-white'>
                         Contact Us
                     </a>
                 </li>
-            </ul>
+            </ul> */}
         </div>
     </motion.nav>
   )

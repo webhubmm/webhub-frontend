@@ -17,7 +17,7 @@ const CourseCard = ({course}: {course: CourseProps}) => {
                         objectFit: 'cover'  }}
                 />
                 <div className="content">
-                    <div className='flex justify-between items-center mb-6'>
+                    <div className='flex flex-col md:flex-row justify-between items-center mb-6'>
                         <h3 style={{ color: course.color }}>
                             {course.title}
                         </h3>
@@ -26,10 +26,11 @@ const CourseCard = ({course}: {course: CourseProps}) => {
                             <h4>Projects - {course.projects.length}</h4>
                         </div>
                     </div>
-                    <br />
-                    <Link href={course.youtube} className='primary-btn'>
-                        Learn More 
-                    </Link>
+                    <div className='flex justify-center md:justify-start'>
+                        <Link href={course.youtube} className='primary-btn'>
+                            Learn More 
+                        </Link>
+                    </div>
                 </div>
             </div>
   )

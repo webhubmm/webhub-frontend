@@ -36,7 +36,7 @@ const Process = () => {
 
   const [activeIndex, setActiveIndex] = useState<any>(0);
 
-  const handleItemClick = (index : any) => {
+  const handleItemClick = (index : number) => {
     if (index === activeIndex) {
       setActiveIndex(null); 
     } else {
@@ -49,21 +49,23 @@ const Process = () => {
             <div className="w-full">
               <div className='flex justify-center items-center flex-col gap-20'>
                   <Reveal>
-                    <div className='gradient-title title'>
-                        Our Process
-                    </div>
-                    <ul className='process-box'>
-                      {
-                        process.map((data,index) => (
-                          <AccordionItem
-                              key={index} 
-                              data={data} 
-                              isActive={index === activeIndex} 
-                              onClick={() => handleItemClick(index)}
-                          />
-                        ))
-                      }
-                    </ul>
+                    <>
+                      <div className='gradient-title title'>
+                          Our Process
+                      </div>
+                      <ul className='process-box'>
+                        {
+                          process.map((data,index) => (
+                            <AccordionItem
+                                key={index} 
+                                data={data} 
+                                isActive={index === activeIndex} 
+                                onClick={() => handleItemClick(index)}
+                            />
+                          ))
+                        }
+                      </ul>
+                    </>
                   </Reveal>
               </div>
             </div>
