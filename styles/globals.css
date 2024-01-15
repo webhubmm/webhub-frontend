@@ -3,6 +3,30 @@
 @tailwind utilities;
 
 
+body {
+    --sb-track-color: #232E33;
+    --sb-thumb-color: #4360ed;
+    --sb-size: 3px;
+  
+    scrollbar-color: var(--sb-thumb-color) 
+                     var(--sb-track-color);
+    scroll-behavior: smooth;
+  }
+  
+  body::-webkit-scrollbar {
+    width: var(--sb-size) 
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 1px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 1px;
+    
+}
 
 
 @font-face {
@@ -62,7 +86,8 @@ body{
 .cursor{
     width: 40px;
     height: 40px;
-    border: 2px solid var(--primary-color);
+    background-color:  var(--primary-color);
+    opacity: .7;
     border-radius: 50%;
     position: fixed;
     top: 0;
@@ -997,6 +1022,7 @@ body{
 
     #process{
         width: 100%;
+        min-height: 100vh;
         display: flex;
         justify-content: center;
     }
@@ -1178,9 +1204,15 @@ body{
 
     .modalStyle{
         width: 60%;
-        min-height: 400px;
+        min-height: 200px;
         background-color: #000;
         box-shadow: 0px 0px 200px 0px rgba(125, 129, 255, 0.2);;
         border-radius: 10px;
         padding: 30px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .modalStyle{
+            width: 90%;
+        }
     }

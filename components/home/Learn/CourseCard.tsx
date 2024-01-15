@@ -23,11 +23,11 @@ const CourseCard = ({course}: {course: CourseProps}) => {
                         </h3>
                         <div className="flex gap-2">
                             <h4>Lessons - {course.total}</h4>
-                            <h4>Projects - {course.projects.length}</h4>
+                            <h4>Projects - {course.projects}</h4>
                         </div>
                     </div>
                     <div className='flex justify-center md:justify-start'>
-                        <Link href={course.youtube} className='primary-btn'>
+                        <Link href={course.youtube} target='_blank' className='primary-btn'>
                             Learn More 
                         </Link>
                     </div>

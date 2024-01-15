@@ -49,11 +49,11 @@ export default function RootLayout({
   return (
     <SidebarContextProvider>
     <html lang="en">
-      <body suppressHydrationWarning={true}>
-        {/* <motion.div className="cursor"
+      <body suppressHydrationWarning={true} style={{ cursor: 'none' }}>
+        <motion.div className="cursor"
           variants={cursorVariants}
           animate="default"
-        ></motion.div> */}
+        ></motion.div>
         <Navbar />
         <main>
           {children}

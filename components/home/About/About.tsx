@@ -13,22 +13,22 @@ const About = () => {
     {
       id: 1,
       label: 'UI/UX Design',
-      content: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque sapiente nam distinctio voluptatem officia omnis possimus. Rerum beatae at culpa quaerat delectus ipsa explicabo eos eligendi? Molestias fugit incidunt eveniet?'
+      content: 'At WebHubMM, our UI/UX services are meticulously crafted to elevate the visual appeal, usability, and overall user experience of your digital products. We understand that the user interface (UI) and user experience (UX) play a pivotal role in the success of any digital platform. Our dedicated team of UI/UX designers combines creativity with functionality to deliver designs that not only look stunning but also provide an intuitive and seamless interaction for your users'
     },
     {
       id: 2,
       label: 'Website Service',
-      content: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque sapiente nam distinctio voluptatem officia omnis possimus. Rerum beatae at culpa quaerat delectus ipsa explicabo eos eligendi? Molestias fugit incidunt eveniet?'
+      content: 'At WebHubMM, we specialize in developing robust and scalable web applications that are tailored to meet the unique requirements of your business. Our Web App services encompass a comprehensive approach, blending cutting-edge technologies with a strategic mindset to deliver solutions that not only meet but exceed your expectations.'
     },
     {
       id: 3,
       label: 'Mobile App Service',
-      content: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque sapiente nam distinctio voluptatem officia omnis possimus. Rerum beatae at culpa quaerat delectus ipsa explicabo eos eligendi? Molestias fugit incidunt eveniet?'
+      content: 'WebHubMM is at the forefront of mobile app development, delivering cutting-edge solutions that cater to the dynamic needs of the mobile landscape. Our Mobile App services are designed to provide a seamless and intuitive experience for users across iOS and Android platforms.'
     },
     {
       id: 4,
       label: 'CMS Service',
-      content: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque sapiente nam distinctio voluptatem officia omnis possimus. Rerum beatae at culpa quaerat delectus ipsa explicabo eos eligendi? Molestias fugit incidunt eveniet?'
+      content: 'WebHubMM offers comprehensive Content Management System (CMS) services, empowering you to take control of your digital content effortlessly. Our CMS solutions are designed to meet the diverse needs of businesses, from simple blogs to complex enterprise websites, providing flexibility, efficiency, and ease of management.'
     },
   ]
 

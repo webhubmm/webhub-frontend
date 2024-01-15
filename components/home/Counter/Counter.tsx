@@ -23,9 +23,9 @@ const Counter = () => {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi fugit architecto labore officia, velit numquam. Lorem ipsum dolor sit amet.
                       </p>
                     </div>
-                    <div className="flex justify-center lg:justify-start">
+                    {/* <div className="flex justify-center lg:justify-start">
                       <Link href={'/'} className=' primary-btn'>Our Team</Link>
-                    </div>
+                    </div> */}
                     </>
                   </Reveal>
               </div>

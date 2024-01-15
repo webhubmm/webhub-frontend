@@ -56,13 +56,13 @@ const Navbar = () => {
                 </div> */}
             </div>
             <div className="flex justify-start">
-                <a href="#!" className="mr-6 text-neutral-600 dark:text-neutral-200">
+                <a href="https://www.facebook.com/profile.php?id=100091761421970" className="mr-6 text-neutral-600 dark:text-neutral-200">
                     <BiLogoFacebook style={{ color: "#fff", fontSize: "20px" }} />
                 </a>
-                <a href="#!" className="mr-6 text-neutral-600 dark:text-neutral-200">
+                <a href="mailto:admin@webhubmm.com" className="mr-6 text-neutral-600 dark:text-neutral-200">
                     <BiMailSend style={{ color: "#fff", fontSize: "20px" }} />
                 </a>
-                <a href="#!" className="mr-6 text-neutral-600 dark:text-neutral-200">
+                <a href="https://www.youtube.com/@webhubmyanmar1213" className="mr-6 text-neutral-600 dark:text-neutral-200">
                     <BiLogoYoutube style={{ color: "#fff", fontSize: "20px" }} />
                 </a>
                 <a href="#!" className="mr-6 text-neutral-600 dark:text-neutral-200">

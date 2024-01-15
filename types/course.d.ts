@@ -5,7 +5,7 @@ export interface CourseProps {
     content: string,
     tags: string[],
     total: number,
-    projects: string[],
+    projects: number,
     image: string,
     color: string
 }
