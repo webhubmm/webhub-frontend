@@ -49,6 +49,7 @@ const Testimonial = () => {
         infinite: true,
         slidesToShow: 2,
         slidesToScroll: 2,
+        centerPadding: "10px",
         arrows: true,
         // autoplay: true,
         // pauseOnHover: true,
@@ -73,7 +74,7 @@ const Testimonial = () => {
             <section id='learn' className='container mx-auto px-4 section-spacing relative'>
                 <div className="">
                     <Reveal>
-                        <h2 className="gradient-title text-center">
+                        <h2 className="gradient-title px-2 md:p-0">
                                 Testimonial
                         </h2>
                     </Reveal>

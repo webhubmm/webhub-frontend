@@ -8,22 +8,20 @@ const Project = () => {
     <section id='project' className='section-spacing'>
         <div className='container mx-auto px-4'>
             <Reveal>
-                <div className="flex justify-center md:justify-start">
-                    <h1 className="gradient-title">
-                        Projects
-                    </h1>
-                </div>
+                <h1 className="gradient-title">
+                    Projects
+                </h1>
             </Reveal>
             <Reveal>
                 <div className="project  container mx-auto px-4 justify-center">
                     <div className='relative'>
                         <div className={`title subtitle`}>
-                            Binary Boss , Electronic Ecommerce Shop
+                            Pyay Yadanar , Networking Service
                         </div>
                     </div>
                     <div className="img-container box-1">
                         <Image
-                            src="/images/project-1.png"
+                            src="/images/project-1.webp"
                             width={700}
                             height={400}
                             alt="Picture of the author"
@@ -35,12 +33,12 @@ const Project = () => {
                 <div className="project container mx-auto px-4 justify-center">
                     <div className='relative'>
                         <div className={`title subtitle`}>
-                            Fashion King , a ecommerce store
+                            GTX , Digital Exchange Web3 Company
                         </div>
                     </div>
                     <div className="img-container box-2">
                         <Image
-                            src="/images/project-2.png"
+                            src="/images/project-2.webp"
                             width={700}
                             height={400}
                             alt="Picture of the author"
@@ -53,12 +51,12 @@ const Project = () => {
                 <div className="project container mx-auto px-4 justify-center">
                     <div className='relative'>
                         <div className={`title subtitle`}>
-                            Thai Stock Lottery Engine
+                            MTK , Lottery Game Engine
                         </div>
                     </div>
                     <div className="img-container box-1">
                         <Image
-                            src="/images/project-2.png"
+                            src="/images/project-3.webp"
                             width={700}
                             height={400}
                             alt="Picture of the author"

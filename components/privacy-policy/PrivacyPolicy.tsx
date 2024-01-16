@@ -2,8 +2,8 @@ import React from 'react'
 
 const PrivacyPolicy = () => {
   return (
-    <div className='container mx-auto mt-32'>
-        <h1 className='euro-extd text-white uppercase my-6 text-4xl'>Privacy Policy</h1>
+    <div className='container mx-auto mt-32 px-2'>
+        <h1 className='euro-extd text-white uppercase my-6 text-2xl md:text-4xl'>Privacy Policy</h1>
         <p className='text-gray-400 my-2'>Last updated: January 15, 2024</p>
         <p className='text-gray-400 my-2'>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
         <p className='text-gray-400 my-2'>We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy. This Privacy Policy has been created with the help of the <a href="https://www.freeprivacypolicy.com/free-privacy-policy-generator/" target="_blank">Free Privacy Policy Generator</a>.</p>

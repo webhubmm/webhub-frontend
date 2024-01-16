@@ -8,27 +8,27 @@ const process = [
   {
     id: 1,
     question: 'Design',
-    answer: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga similique voluptate reiciendis quisquam perspiciatis veritatis corporis vero corrupti? Dolorem, veritatis!'
+    answer: 'In the Design phase, we ideate and create a blueprint, emphasizing user experience, aesthetics, and functionality, setting the foundation for a visually compelling and user-centric project.'
   },
   {
     id: 2,
     question: 'Development',
-    answer: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga similique voluptate reiciendis quisquam perspiciatis veritatis corporis vero corrupti? Dolorem, veritatis!'
+    answer: 'Development breathes life into the design. Our skilled team translates concepts into functional code, constructing the backbone of your digital solution with precision and efficiency.'
   },
   {
     id: 3,
     question: 'Testing',
-    answer: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga similique voluptate reiciendis quisquam perspiciatis veritatis corporis vero corrupti? Dolorem, veritatis!'
+    answer: 'Rigorous testing ensures reliability. Every element undergoes scrutiny to identify and resolve issues, ensuring a seamless and robust user experience before the project moves forward.'
   },
   {
     id: 4,
     question: 'Production',
-    answer: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga similique voluptate reiciendis quisquam perspiciatis veritatis corporis vero corrupti? Dolorem, veritatis!'
+    answer: 'Transitioning from testing to production, we deploy your project for public access. This phase involves fine-tuning and optimizing, ensuring a smooth launch and operational efficiency.'
   },
   {
     id: 5,
     question: 'Maintanence',
-    answer: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga similique voluptate reiciendis quisquam perspiciatis veritatis corporis vero corrupti? Dolorem, veritatis!'
+    answer: 'Post-launch, our commitment continues with ongoing maintenance. We monitor performance, address emerging issues, and implement updates, ensuring your digital solution operates optimally throughout its lifecycle.'
   },
 ]
 

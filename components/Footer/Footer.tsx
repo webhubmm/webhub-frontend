@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 import { BiLogoFacebook, BiLogoLinkedin, BiLogoYoutube, BiMailSend } from 'react-icons/bi'
 
@@ -12,7 +13,7 @@ const Footer = () => {
                 <div className="mx-auto md:mx-0">
                     <div className="flex gap-3 justify-start items-center mb-5">
                         <Image
-                            src="/images/logo.png" 
+                            src="/images/logo.webp" 
                             width={40} 
                             height={70} 
                             alt="Webhub"
@@ -45,12 +46,12 @@ const Footer = () => {
                     <h6 className="mb-4 text-gray-200 flex justify-center font-semibold uppercase md:justify-start">
                         Privacy 
                     </h6>
-                    <a href='/privacy-policy' className="mb-4 text-gray-400 flex items-center justify-center md:justify-start">
+                    <Link href='/privacy-policy' className="mb-4 text-gray-400 flex items-center justify-center md:justify-start">
                         Privacy & Policy
-                    </a>
-                    <a href='/terms' className="mb-4 text-gray-400 flex items-center justify-center md:justify-start">
+                    </Link>
+                    <Link href='/terms' className="mb-4 text-gray-400 flex items-center justify-center md:justify-start">
                             Term & Conditions
-                    </a>
+                    </Link>
                 </div>
 
                 <div style={{ zIndex: 100 }}>

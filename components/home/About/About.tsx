@@ -42,7 +42,7 @@ const About = () => {
                         We are a <span className='primary-text-color euro-extd'>software company</span> in Myanmar 
                     </h1>
                     <p className='para-text'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dicta aliquam adipisci minima rerum quisquam voluptate architecto ducimus fuga odio.
+                      Welcome from WHM, where technological prowess meets creative brilliance. Discover a comprehensive array of software services designed to elevate your digital presence and redefine success in the digital landscape.
                     </p>
                   </>
 
@@ -53,20 +53,21 @@ const About = () => {
               <div className="text-center w-full md:w-2/3">
                 <Reveal width='fit-content'>
                       <p className="lead-text">
-                        Lorem ipsum dolor sit amet <button onClick={() => {
-                          setIsOpen(true)
-                          setIndex(1)
-                        }} className="link">UI/UX Design</button> adipisicing elit. Corporis aperiam, vel <button onClick={() => {
+                        At WHM, we understand that your digital presence is more than a website – it's an immersive journey for your audience. Our team of experts is dedicated to crafting <button onClick={() => {
                           setIsOpen(true)
                           setIndex(2)
-                        }} className="link">Website Service</button> suscipit est perferendis ratione!
-                        Lorem ipsum dolor sit amet <button onClick={() => {
+                        }} className="link">Website Service</button> that leave a lasting impression, going beyond the conventional to redefine possibilities.
+
+                        Our commitment extends to providing innovative web services, including captivating <button onClick={() => {
+                          setIsOpen(true)
+                          setIndex(1)
+                        }} className="link">UI/UX Design</button>, cutting-edge <button onClick={() => {
                           setIsOpen(true)
                           setIndex(3)
-                        }} className="link">Mobile App Service</button> adipisicing elit. Corporis aperiam, vel <button onClick={() => {
+                        }} className="link">Mobile App Service</button>, and empowering <button onClick={() => {
                           setIsOpen(true)
                           setIndex(4)
-                        }} className="link">CMS Service</button> suscipit est perferendis ratione!
+                        }} className="link">CMS Service</button>. Together, let's navigate the digital landscape, unlock new possibilities, and redefine your digital presence for sustained excellence.
                       </p>
                 </Reveal>
               </div>

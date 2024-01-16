@@ -17,7 +17,7 @@ const Learn = () => {
             total: 137,
             projects: 20,
             color: "#00ff2f",
-            image: "/images/web.jpeg",
+            image: "/images/web.webp",
         },
         {
             id: 2,
@@ -28,7 +28,7 @@ const Learn = () => {
             projects: 15,
             total: 69,
             color: "#fffb00",
-            image: "/images/js.jpeg",
+            image: "/images/js.webp",
         },
         {
             id: 3,
@@ -39,7 +39,7 @@ const Learn = () => {
             projects: 7,
             total: 102,
             color: "#00c3ff",
-            image: "/images/react.png",
+            image: "/images/react.webp",
         },
         {
             id: 4,

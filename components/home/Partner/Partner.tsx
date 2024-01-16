@@ -17,7 +17,7 @@ const Partner = () => {
                                 <img
                                 alt="gallery"
                                 className="block h-[60%] w-[60%] rounded-none object-cover object-center"
-                                src="/images/pyay-yadanar.png" />
+                                src="/images/pyay-yadanar.webp" />
                                 <div>
                                     <h2 className='text-white text-3xl euro-extd'>Pyay Yadanar</h2>
                                     <p className='text-gray-400 mt-2'>
@@ -31,7 +31,7 @@ const Partner = () => {
                                 <img
                                 alt="gallery"
                                 className="block h-[60%] w-[60%] rounded-none object-cover object-center"
-                                src="/images/lumi.jpeg" />
+                                src="/images/lumi.webp" />
                                 <div>
                                     <h2 className='text-white text-3xl euro-extd'>Lumi</h2>
                                     <p className='text-gray-400 mt-2'>
@@ -45,7 +45,7 @@ const Partner = () => {
                                 <img
                                 alt="gallery"
                                 className="block h-[60%] w-[60%] rounded-none object-cover object-center"
-                                src="/images/vital-tech.jpeg" />
+                                src="/images/vital-tech.webp" />
                                 <div>
                                     <h2 className='text-white text-3xl euro-extd'>Vital Tech</h2>
                                     <p className='text-gray-400 mt-2'>

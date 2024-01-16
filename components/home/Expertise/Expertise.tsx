@@ -8,27 +8,27 @@ const Expertise = () => {
         {
             number: '01',
             title: "Discovery",
-            body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit modi debitis numquam, quisquam porro unde exercitationem, quas voluptates atque labore nisi temporibus harum quae quidem."
+            body: "Embark on a transformative journey with our Discovery expertise. Through rigorous analysis, we unravel the intricacies of your business, unveiling challenges, and aspirations. This phase sets the foundation for a tailored roadmap, aligning technology with your vision."
         },
         {
             number: '02',
             title: "Strategy",
-            body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit modi debitis numquam, quisquam porro unde exercitationem, quas voluptates atque labore nisi temporibus harum quae quidem."
-        },
-        {
-            number: '03',
-            title: "Websites",
-            body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit modi debitis numquam, quisquam porro unde exercitationem, quas voluptates atque labore nisi temporibus harum quae quidem."
-        },
-        {
-            number: '04',
-            title: "Mobile Apps",
-            body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit modi debitis numquam, quisquam porro unde exercitationem, quas voluptates atque labore nisi temporibus harum quae quidem."
+            body: "In the Strategy realm, we craft blueprints for success. Meticulously aligning business goals with cutting-edge technology, we plan for seamless execution. Our strategic approach ensures that your software or web solution is not just efficient but also aligned with your overarching objectives."
         },
         {
             number: '05',
             title: "Web Design",
-            body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit modi debitis numquam, quisquam porro unde exercitationem, quas voluptates atque labore nisi temporibus harum quae quidem."
+            body: "Elevate your online presence with our Web Design prowess. Our Discovery-driven process unveils your brand essence and user expectations, guiding the creation of visually stunning and user-centric websites. From concept to execution, we craft digital experiences that resonate with your audience.            "
+        },
+        {
+            number: '03',
+            title: "Websites",
+            body: "Immerse your brand in the digital landscape with our Websites expertise. Through meticulous planning and creative execution, we deliver online platforms that reflect your brand identity and foster meaningful connections with your audience."
+        },
+        {
+            number: '04',
+            title: "Mobile Apps",
+            body: "Unlock the potential of the mobile world with our Mobile Apps expertise. From concept to deployment, our strategic approach ensures the development of user-centric, scalable, and feature-rich mobile applications. Join us in shaping the future of mobile technology."
         },
     ]
 

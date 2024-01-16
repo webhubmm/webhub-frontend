@@ -481,7 +481,7 @@ body{
     min-height: 90vh;
     align-items: center;
     justify-content: center;
-    background-image: url(../public/images/bg.png);
+    background-image: url(../public/images/bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -971,7 +971,7 @@ body{
 }
 
 .img-container.box-2{
-    background-color: var(--primary-color);
+    background-color: #fff;
 }
 
 .project .img-container img{
@@ -1162,11 +1162,11 @@ body{
     }
 
     .slick-prev{
-        left: 0px !important;
+        left: 10px !important;
     }
     
     .slick-next{
-        left: 40px !important;
+        left: 50px !important;
     }
 
     .slick-prev, .slick-next{

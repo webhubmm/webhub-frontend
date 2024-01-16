@@ -6,6 +6,7 @@ import { BiLogoFacebook, BiLogoLinkedin, BiLogoYoutube, BiMailSend, BiMenu, BiX 
 import { motion } from 'framer-motion'
 import { MdLanguage } from "react-icons/md";
 import { CiDark } from "react-icons/ci";
+import Link from 'next/link';
 
 const Navbar = () => {
 
@@ -36,9 +37,9 @@ const Navbar = () => {
         className={(scrollY > 200 || open) ? 'nav-bg' : ''}>
         <div className='navbar container mx-auto px-4'>
             <div className="flex justify-between nav-brand items-center">
-                <a href="/">
+                <Link href="/">
                     <Image 
-                        src="/images/logo.png" 
+                        src="/images/logo.webp" 
                         width={40} 
                         height={70} 
                         alt="Webhub"
@@ -46,7 +47,7 @@ const Navbar = () => {
                             objectFit: 'cover', 
                         }}
                         priority />
-                </a>
+                </Link>
                 {/* <div className='text-white toggle-btn text-5xl' onClick={() => {
                         setOpen(!open)
                 }}>

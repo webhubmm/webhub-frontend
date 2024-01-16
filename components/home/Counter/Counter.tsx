@@ -17,10 +17,10 @@ const Counter = () => {
                           We Are
                       </h1>
                       <h2 className="subtitle">
-                        Lorem ipsum dolor, sit amet consectetur <br /> adipisicing elit. Eligendi, perspiciatis.
+                         a dedicated team of professionals with a passion for creating exceptional digital experiences. 
                       </h2>
                       <p className="lead-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi fugit architecto labore officia, velit numquam. Lorem ipsum dolor sit amet.
+                        Our diverse skill set and collaborative approach enable us to offer a wide range of services, making us a one-stop solution for all your web and mobile development requirements.
                       </p>
                     </div>
                     {/* <div className="flex justify-center lg:justify-start">
@@ -33,7 +33,7 @@ const Counter = () => {
                 <Reveal>
                   <div className='flex flex-col gap-0'>
                       <h1 className="count">
-                          5+
+                          4
                       </h1>
                       <p className="sub-text">
                         Done Project
@@ -43,7 +43,7 @@ const Counter = () => {
                 <Reveal>
                   <div className='flex flex-col gap-0'>
                       <h1 className="count">
-                          15+
+                          4
                       </h1>
                       <p className="sub-text">
                         Happy Client
@@ -53,7 +53,7 @@ const Counter = () => {
                 <Reveal>
                   <div className='flex flex-col gap-0'>
                       <h1 className="count">
-                          3+
+                          4+
                       </h1>
                       <p className="sub-text">
                         Years of Exp
@@ -63,10 +63,10 @@ const Counter = () => {
                 <Reveal>
                   <div className='flex flex-col gap-0'>
                       <h1 className="count">
-                          3+
+                          6
                       </h1>
                       <p className="sub-text">
-                        Years of Exp
+                        Projects
                       </p>
                   </div>
                 </Reveal>
