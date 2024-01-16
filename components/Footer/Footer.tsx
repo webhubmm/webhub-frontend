@@ -16,7 +16,7 @@ const Footer = () => {
                             src="/images/logo.webp" 
                             width={40} 
                             height={70} 
-                            alt="Webhub"
+                            alt="webhub"
                             style={{
                                 objectFit: 'cover', 
                             }}

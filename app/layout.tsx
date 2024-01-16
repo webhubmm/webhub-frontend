@@ -8,6 +8,7 @@ import Navbar from '@/components/navbar/Navbar';
 import Footer from '@/components/Footer/Footer';
 import { Metadata } from 'next';
 import GoogleAnalytics from '@/components/analytics/GoogleAnalytics';
+import Head from 'next/head';
 
 export const metadata: Metadata = {
   title: 'WEBHUB Myanmar',
@@ -50,6 +51,15 @@ export default function RootLayout({
   return (
     <SidebarContextProvider>
     <html lang="en">
+      <Head>
+          <meta name="title" content="Webhub Myanmar " />
+          <meta name="description" content="Welcome from WHM, where technological prowess meets creative brilliance. Discover a comprehensive array of software services designed to elevate your digital presence and redefine success in the digital landscape." />
+          <meta name="keywords" content="webhub, webhubmm , webhub service , web service , software service myanmar " />
+          <meta name="robots" content="index, follow" />
+          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+          <meta name="language" content="English" />
+          <meta name="author" content="Htet Myat Soe" />
+      </Head>
       <body suppressHydrationWarning={true}> 
         <GoogleAnalytics ga_id='G-2XJPD67KQG' />
         {/* style={{ cursor: 'none' }} */}

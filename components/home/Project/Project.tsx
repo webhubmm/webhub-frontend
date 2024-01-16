@@ -24,7 +24,7 @@ const Project = () => {
                             src="/images/project-1.webp"
                             width={700}
                             height={400}
-                            alt="Picture of the author"
+                            alt="webhub"
                         />
                     </div>
                 </div>
@@ -41,7 +41,7 @@ const Project = () => {
                             src="/images/project-2.webp"
                             width={700}
                             height={400}
-                            alt="Picture of the author"
+                            alt="webhub"
                         />
                     </div>
                 </div>
@@ -59,7 +59,7 @@ const Project = () => {
                             src="/images/project-3.webp"
                             width={700}
                             height={400}
-                            alt="Picture of the author"
+                            alt="webhub"
                         />
                     </div>
                 </div>

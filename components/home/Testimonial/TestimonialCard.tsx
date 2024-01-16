@@ -1,4 +1,5 @@
 import Reveal from '@/components/Utils/Reveal'
+import Image from 'next/image'
 import React from 'react'
 
 const TestimonialCard = ({data}:{data: any}) => {
@@ -19,7 +20,11 @@ const TestimonialCard = ({data}:{data: any}) => {
                     </p>
                 </div>
                 <div className="flex flex-col items-center justify-center p-8 rounded-b-lg dark:bg-violet-400 dark:text-gray-900">
-                    <img src="https://source.unsplash.com/50x50/?portrait?1" alt="" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full z-30" />
+                    <Image 
+                        width={0}
+                        height={0}
+                        sizes='100%'
+                        src="/images/user.webp" alt="webhub" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full z-30" />
                     <p className="text-xl font-semibold leadi euro-extd main-text-color">{data.name}</p>
                     <p className="text-sm  main-text-color">{data.role+" at "+data.company}</p>
                 </div>

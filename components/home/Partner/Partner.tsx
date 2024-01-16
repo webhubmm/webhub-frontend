@@ -1,4 +1,5 @@
 import Reveal from '@/components/Utils/Reveal'
+import Image from 'next/image'
 import React from 'react'
 
 const Partner = () => {
@@ -14,10 +15,13 @@ const Partner = () => {
                     <div className="-m-1 flex flex-wrap md:-m-2 flex-col sm:flex-row justify-center items-center">
                         <div className="flex w-full sm:w-1/3 flex-wrap">
                             <div className="w-full p-1 md:p-2 border-gray-900 border flex justify-center items-center flex-col gap-5">
-                                <img
-                                alt="gallery"
-                                className="block h-[60%] w-[60%] rounded-none object-cover object-center"
-                                src="/images/pyay-yadanar.webp" />
+                                <Image
+                                    alt="webhub"
+                                    width={0}
+                                    height={0}
+                                    sizes='100%'
+                                    className="block h-[60%] w-[60%] rounded-none object-cover object-center"
+                                    src="/images/pyay-yadanar.webp" />
                                 <div>
                                     <h2 className='text-white text-3xl euro-extd'>Pyay Yadanar</h2>
                                     <p className='text-gray-400 mt-2'>
@@ -28,10 +32,13 @@ const Partner = () => {
                         </div>
                         <div className="flex w-full sm:w-1/3 flex-wrap">
                             <div className="w-full p-1 md:p-2 border-gray-900 border flex justify-center items-center flex-col gap-5">
-                                <img
-                                alt="gallery"
-                                className="block h-[60%] w-[60%] rounded-none object-cover object-center"
-                                src="/images/lumi.webp" />
+                                <Image
+                                    alt="webhub"
+                                    width={0}
+                                    height={0}
+                                    sizes='100%'
+                                    className="block h-[60%] w-[60%] rounded-none object-cover object-center"
+                                    src="/images/lumi.webp" />
                                 <div>
                                     <h2 className='text-white text-3xl euro-extd'>Lumi</h2>
                                     <p className='text-gray-400 mt-2'>
@@ -42,10 +49,13 @@ const Partner = () => {
                         </div>
                         <div className="flex w-full sm:w-1/3 flex-wrap">
                             <div className="w-full p-1 md:p-2 border-gray-900 border flex justify-center items-center flex-col gap-5">
-                                <img
-                                alt="gallery"
-                                className="block h-[60%] w-[60%] rounded-none object-cover object-center"
-                                src="/images/vital-tech.webp" />
+                                <Image
+                                    alt="webhub"
+                                    width={0}
+                                    height={0}
+                                    sizes='100%'
+                                    className="block h-[60%] w-[60%] rounded-none object-cover object-center"
+                                    src="/images/vital-tech.webp" />
                                 <div>
                                     <h2 className='text-white text-3xl euro-extd'>Vital Tech</h2>
                                     <p className='text-gray-400 mt-2'>
