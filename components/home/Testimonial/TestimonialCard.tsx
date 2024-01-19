@@ -24,7 +24,7 @@ const TestimonialCard = ({data}:{data: any}) => {
                         width={0}
                         height={0}
                         sizes='100%'
-                        src="/images/user.webp" alt="webhub" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full z-30" />
+                        src={data.image} alt="webhub" className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover object-cover rounded-full z-30" />
                     <p className="text-xl font-semibold leadi euro-extd main-text-color">{data.name}</p>
                     <p className="text-sm  main-text-color">{data.role+" at "+data.company}</p>
                 </div>

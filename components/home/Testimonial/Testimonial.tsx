@@ -11,35 +11,27 @@ const Testimonial = () => {
     const data = [
         {
             id: 1,
-            name: "Alex",
+            name: "Gio",
             role: "CEO",
-            company: "GMAT",
-            image: "https://source.unsplash.com/50x50/?portrait?1",
-            message: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores ut qui similique quis minus, repellendus nobis delectus sint iusto. Provident!"
+            company: "GTX",
+            image: "/images/gio.webp",
+            message: "Exceptional software service! robust functionality exceeded expectations. The founder's visionary approach is evident in its efficiency. Highly recommend!"
         },
         {
             id: 2,
-            name: "Nyan Min Htet",
-            role: "CEO",
-            company: "2D3D",
-            image: "https://source.unsplash.com/50x50/?portrait?1",
-            message: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores ut qui similique quis minus, repellendus nobis delectus sint iusto. Provident!"
+            name: "Pone Myat",
+            role: "CTO",
+            company: "Vital tech",
+            image: "/images/ponemyat.webp",
+            message: "We have been worked together for many projects and their teams have excellent tech skills and take full responsibility. Their work flow is very unique."
         },
         {
             id: 3,
-            name: "Mark Nale",
+            name: "Shine Lin Zaw",
             role: "CEO",
-            company: "AKEX",
-            image: "https://source.unsplash.com/50x50/?portrait?1",
-            message: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores ut qui similique quis minus, repellendus nobis delectus sint iusto. Provident!"
-        },
-        {
-            id: 4,
-            name: "PMT",
-            role: "CTO",
-            company: "Vital Tech",
-            image: "https://source.unsplash.com/50x50/?portrait?1",
-            message: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores ut qui similique quis minus, repellendus nobis delectus sint iusto. Provident!"
+            company: "Pyay yadanar",
+            image: "/images/shine.webp",
+            message: "The service is outstandingly patient and friendly, creating a positive user experience. Additionally, the budget-friendly pricing adds to the appeal , making it a top choice for service."
         },
     ]
     

@@ -66,9 +66,9 @@ const Navbar = () => {
                 <a href="https://www.youtube.com/@webhubmyanmar1213" className="mr-6 text-neutral-600 dark:text-neutral-200">
                     <BiLogoYoutube style={{ color: "#fff", fontSize: "20px" }} />
                 </a>
-                <a href="#!" className="mr-6 text-neutral-600 dark:text-neutral-200">
+                {/* <a href="#!" className="mr-6 text-neutral-600 dark:text-neutral-200">
                     <BiLogoLinkedin style={{ color: "#fff", fontSize: "20px" }} />
-                </a>
+                </a> */}
             </div>
             {/* <ul className='flex items-center'>
                 <li>
